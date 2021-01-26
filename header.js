@@ -8,8 +8,8 @@ var header = React.createElement("div", {
   }, " Cavel Vellenoweth "), React.createElement("div", {
     className: "header-right"
   }, React.createElement("a", {
-    href: "#projects",
+    href: "project1.html",
     className: "header-link"
-  }, " projects ")));
+  }, " project1 ")));
 
 ReactDOM.render(header, document.getElementById('header'));
