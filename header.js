@@ -5,11 +5,11 @@ var header = React.createElement("div", {
   }, React.createElement("a", {
     href: "https://cavelvellenoweth.github.io/",
     className: "logo"
-  }, " Cavel Vellenoweth "), React.createElement("div", {
+  }, "Cavel Vellenoweth"), React.createElement("div", {
     className: "header-right"
   }, React.createElement("a", {
     href: "project1.html",
     className: "header-link"
-  }, " project1 ")));
+  }, "project1")));
 
 ReactDOM.render(header, document.getElementById('header'));
