@@ -8,7 +8,7 @@ var header = React.createElement("div", {
   }, "Cavel Vellenoweth"), React.createElement("div", {
     className: "header-right"
   }, React.createElement("a", {
-    href: "project1.html",
+    href: "project1",
     className: "header-link"
   }, "project1")));
 
