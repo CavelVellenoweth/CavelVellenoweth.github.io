@@ -9,7 +9,13 @@ var footer = React.createElement("div", {
   React.createElement("a", {
     href: "mailto: cavelvellenoweth@gmail.com",
     className: "email"
-  },"CavelVellenoweth@gmail.com")
+  },"CavelVellenoweth@gmail.com"),
+  React.createElement("a", {
+    href: "CavelVellenoweth_CV.pdf",
+    download: true,
+    target: "_blank",
+    className: "CV"
+  },"My CV!")
   );
 
 ReactDOM.render(footer, document.getElementById('footer'));
