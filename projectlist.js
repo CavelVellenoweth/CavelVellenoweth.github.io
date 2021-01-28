@@ -1,4 +1,3 @@
-
 class ProjectList extends React.Component{
     constructor(props)
     {
