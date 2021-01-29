@@ -2,7 +2,7 @@
 
 const projects = [
     {
-        image: '/Project_Images/NHS_Search.png',
+        image: '/Project_images/NHS_Search.png',
         title: 'NHS MVC Recreation',
         shortDesc: 'short p1',
         medDesc: 'Using the NHS Conditions API, I created a web application to convert the JSON data returned by the web API into valid HTML. \n In addition, I added CSS to display the HTML content on the page according to the style guidelines provided by the NHS.',
