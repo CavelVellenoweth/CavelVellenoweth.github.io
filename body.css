@@ -15,3 +15,31 @@ body {
   min-height: 800px;
   clear: both;
 }
+
+#this-website {
+  padding-bottom: 100px;
+}
+.project {
+  overflow: auto;
+}
+.title {
+  /* position: relative;
+  top: 70%;
+  left: 40%; */
+  width: 60%;
+  float: right;
+}
+.description {
+  text-align: left;
+  white-space: pre-line;
+}
+img {
+  /* position: relative;
+  top: -120px;
+  left: 0; */
+  width: 40%;
+  height: 32%;
+  float: left;
+  /* min-width: 200px;
+  min-height: 160px; */
+}
