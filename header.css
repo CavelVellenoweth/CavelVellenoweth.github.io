@@ -1,8 +1,8 @@
-.header {
+#header {
   overflow: hidden;
   background-color: #000122;
   padding-left: 5%;
-  padding-right: 5%;
+  padding-right: 0;
   padding-top: 10px;
   box-sizing: border-box;
   margin: 0;
@@ -11,6 +11,8 @@
 }
 
 .header a {
+  display: inline-block;
+  text-shadow: none;
   color: white;
   text-align: center;
   padding: 0;
@@ -32,9 +34,22 @@
 
 .header a.active {
   background-color: dodgerblue;
-  color: white;
+  /* color: white; */
 }
 
 .header-right {
+  height: inherit;
+  vertical-align: middle;
+  align-content: right;
+  display: inline;
   float: right;
+  margin-right: 5%;
 }
+.lightToggle {
+  display: inline;
+  float: right;
+  margin-right: 2%;
+}
+/* .header-right a {
+  padding-top: 5px;
+} */

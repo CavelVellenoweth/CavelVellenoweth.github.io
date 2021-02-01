@@ -1,3 +1,5 @@
+import light_toggle from './light_toggle.js'
+
 'use strict';
 
 var header = React.createElement("div", {
@@ -5,11 +7,12 @@ var header = React.createElement("div", {
   }, React.createElement("a", {
     href: "https://cavelvellenoweth.github.io/",
     className: "logo"
-  }, "Cavel Vellenoweth"), React.createElement("div", {
+  }, "Cavel Vellenoweth"),React.createElement(light_toggle), React.createElement("div", {
     className: "header-right"
   }, React.createElement("a", {
     href: "project1",
     className: "header-link"
-  }, "project1")));
+  }, "project1"),
+  ));
 
 ReactDOM.render(header, document.getElementById('header'));

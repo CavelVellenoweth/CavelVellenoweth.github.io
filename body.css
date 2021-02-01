@@ -13,33 +13,33 @@ body {
 #content {
   margin-left: 5%;
   margin-right: 5%;
-  background-color: #020430;
   background-image: url(./Project_images/bodyBackground.png);
   background-size: 100%;
   background-repeat: repeat;
   padding: 10px;
   min-height: 800px;
   clear: both;
+}
+body .dark {
+  background-color: #020430;
   color: white;
 }
 
+body .light {
+  color: black;
+  background-color: #d1d3ff;
+}
 #this-website {
   padding-bottom: 50px;
 }
 #this-website * {
   margin-left: 40%;
   margin-right: 10%;
+  text-align: center;
 }
 .project {
   overflow: auto;
 }
-/* .title {
-  position: relative;
-  top: 70%;
-  left: 40%;
-  width: 60%;
- float: right; 
-} */
 
 #content div {
   margin-bottom: 50px;
@@ -52,14 +52,11 @@ body {
   text-align: center;
   list-style: none;
 }
-/* .description {
-  white-space: pre-line;
-} */
 .image-div {
   margin-bottom: 0px;
   padding-left: 5%;
 }
-img {
+.image-div img {
   align-content: center;
   width: 30%;
   float: left;
@@ -71,7 +68,6 @@ img {
 }
 .text-div {
   display: table;
-  /* width: 60%; */
   height: inherit;
   padding-top: 40px;
 }
@@ -89,7 +85,6 @@ ul.languages {
   min-width: 190px;
   width: fit-content;
   height: 50px;
-  /* border-style: solid; */
   border-top: 0;
   background-color: rgb(255, 161, 0);
   z-index: 2;
@@ -107,13 +102,10 @@ ul.languages {
   margin-right: 0px;
   background-color: rgb(255, 161, 0);
   z-index: 2;
-  /* float: left; */
 }
 p {
   white-space: pre-line;
   text-align: left;
-  /* padding-left: 10%;
-  padding-right: 10%; */
 }
 h2 {
   text-align: left;
@@ -125,10 +117,10 @@ h2 {
   text-align: left;
   margin-left: 10%;
   padding: 20px;
-  /* border-style: solid; */
   width: 60%;
   min-width: 300px;
   background-color: rgb(26, 156, 231);
+  color: white;
   z-index: 1;
   text-shadow: none;
 }
@@ -140,7 +132,6 @@ h2 {
   margin-left: 8%;
   padding: 10px;
   border-bottom: 0;
-  /* border-style: solid; */
   width: fit-content;
   min-width: 250px;
   background-color: rgb(167, 101, 228);
