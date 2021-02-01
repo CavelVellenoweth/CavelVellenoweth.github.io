@@ -1,17 +1,17 @@
+import toggle from "./toggle.js";
 "use strict;"
 
-class light_toggle extends React.Component{
+class test extends React.Component{
     constructor(props)
     {
         super(props);
-        this.state = {lightMode: false, background: "./Project_images/dark.png"}
-        this.toggle = this.toggle.bind(this)
+        this.state = {toggled: false}
+        this.toggle2 = this.toggle2.bind(this)
     }
-    toggle(){
-        if(this.state.lightMode)
+    toggle2(){
+        if(this.state.toggled)
         {
-            this.setState({lightMode: false});
-            this.setState({background: "./Project_images/dark.png"});
+            this.setState({toggled: false});
             document.getElementById("header").style.cssText="background-color: #000122";
             document.getElementById("footer").style.cssText="background-color: #000122";
             document.getElementById("content").style.cssText = "color: white; background-color: #020430;";
@@ -19,23 +19,23 @@ class light_toggle extends React.Component{
         }
         else
         {
-            this.setState({lightMode: true});
+            this.setState({toggled: true});
             document.getElementById("header").style.cssText="background-color: #FF6A00";
             document.getElementById("footer").style.cssText="background-color: #FF6A00";
-            this.setState({background: "./Project_images/light.png"});
             document.getElementById("content").style.cssText = "color: black; background-color: white; text-shadow: none; background-image:url(./Project_images/bodyBackgroundLight.png);";
             document.getElementsByTagName("body")[0].style.cssText="background-image: url(./Project_images/backgroundLight.png);";
         }
     }
     render(){
             return(React.createElement("div",{className:"lightToggle"},
-                React.createElement("img",{ 
-                    className: this.state.lightMode.toString(),
-                    onClick: this.toggle,
-                    src: this.state.background
+                React.createElement(toggle,{ 
+                    image1:"./Project_images/dark.png",
+                    image2:"./Project_images/light.png",
+                    toggle2: this.toggle2,
+                    className: "testToggle",
                 })
             ));
             
     }
 }
-export default light_toggle;
+export default test;
