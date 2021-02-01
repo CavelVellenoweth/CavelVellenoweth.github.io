@@ -1,14 +1,14 @@
 import toggle from "./toggle.js";
 "use strict;"
 
-class test extends React.Component{
+class light_toggle extends React.Component{
     constructor(props)
     {
         super(props);
         this.state = {toggled: false}
-        this.toggle2 = this.toggle2.bind(this)
+        this.toggle_Light = this.toggle_Light.bind(this)
     }
-    toggle2(){
+    toggle_Light(){
         if(this.state.toggled)
         {
             this.setState({toggled: false});
@@ -31,11 +31,11 @@ class test extends React.Component{
                 React.createElement(toggle,{ 
                     image1:"./Project_images/dark.png",
                     image2:"./Project_images/light.png",
-                    toggle2: this.toggle2,
-                    className: "testToggle",
+                    toggle2: this.toggle_Light,
+                    className: "light-toggle",
                 })
             ));
             
     }
 }
-export default test;
+export default light_toggle;
