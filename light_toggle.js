@@ -4,14 +4,14 @@ class light_toggle extends React.Component{
     constructor(props)
     {
         super(props);
-        this.state = {lightMode: false, style: {content: "url(./Project_images/dark.png)"}}
+        this.state = {lightMode: false, background: "./Project_images/dark.png"}
         this.toggle = this.toggle.bind(this)
     }
     toggle(){
         if(this.state.lightMode)
         {
             this.setState({lightMode: false});
-            this.setState({style: {content: "url(./Project_images/dark.png)"}});
+            this.setState({background: "./Project_images/dark.png"});
             document.getElementById("header").style.cssText="background-color: #000122";
             document.getElementById("footer").style.cssText="background-color: #000122";
             document.getElementById("content").style.cssText = "color: white; background-color: #020430;";
@@ -22,7 +22,7 @@ class light_toggle extends React.Component{
             this.setState({lightMode: true});
             document.getElementById("header").style.cssText="background-color: #FF6A00";
             document.getElementById("footer").style.cssText="background-color: #FF6A00";
-            this.setState({style: {content: "url(./Project_images/light.png)"}});
+            this.setState({background: "./Project_images/light.png"});
             document.getElementById("content").style.cssText = "color: black; background-color: white; text-shadow: none; background-image:url(./Project_images/bodyBackgroundLight.png);";
             document.getElementsByTagName("body")[0].style.cssText="background-image: url(./Project_images/backgroundLight.png);";
         }
@@ -32,8 +32,7 @@ class light_toggle extends React.Component{
                 React.createElement("img",{ 
                     className: this.state.lightMode.toString(),
                     onClick: this.toggle,
-                    src: "./Project_images/dark.png",
-                    style: this.state.style
+                    src: this.state.background
                 })
             ));
             
