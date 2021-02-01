@@ -7,7 +7,7 @@ var header = React.createElement("div", {
   }, React.createElement("a", {
     href: "https://cavelvellenoweth.github.io/",
     className: "logo"
-  }, "Cavel Vellenoweth"),React.createElement(light_toggle), React.createElement("div", {
+  }, "Cavel Vellenoweth"),React.createElement(light_toggle,{defaultState:false,childState:false}), React.createElement("div", {
     className: "header-right"
   }, React.createElement("a", {
     href: "project1",

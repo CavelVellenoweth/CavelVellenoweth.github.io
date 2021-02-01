@@ -3,31 +3,29 @@ html {
 }
 body {
   margin: 0;
-  background-image: url(./Project_images/background.png);
+  background-image: url(./Project_images/backgroundClear.png);
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
   font-weight: bold;
+  background-color: #020430;
 }
-
-#content {
+#content-wrapper {
   margin-left: 5%;
   margin-right: 5%;
-  background-image: url(./Project_images/bodyBackground.png);
+  padding: 10px;
+  background-image: url(./Project_images/bodyBackgroundDots.png);
   background-size: 100%;
   background-repeat: repeat;
-  padding: 10px;
-  min-height: 800px;
   clear: both;
 }
-body .dark {
-  background-color: #020430;
-  color: white;
-}
-
-body .light {
-  color: black;
-  background-color: #d1d3ff;
+#content {
+  background-image: url(./Project_images/bodyBackgroundLight.png);
+  background-size: 100%;
+  background-repeat: repeat;
+  /* padding: 10px; */
+  min-height: 800px;
+  clear: both;
 }
 #this-website {
   padding-bottom: 50px;
