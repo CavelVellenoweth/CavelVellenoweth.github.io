@@ -46,7 +46,6 @@ class light_toggle extends React.Component{
             this.setState({toggled: true});
             this.toggleOn()
         }
-        console.log(this.state.toggled)
     }
     render(){
             return(React.createElement("div",{className:"lightToggle"},

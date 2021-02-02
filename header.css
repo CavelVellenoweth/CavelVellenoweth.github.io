@@ -8,13 +8,13 @@
   margin: 0;
   font-family: "arial";
   height: 50px;
+  text-align: left;
 }
 
 .header a {
   display: inline-block;
   text-shadow: none;
   color: white;
-  text-align: center;
   padding: 0;
   text-decoration: none;
   font-size: 15px;
@@ -32,23 +32,25 @@
   background-color: #ddd;
 }
 
-.header a.active {
-  background-color: dodgerblue;
-  /* color: white; */
-}
-
 .header-right {
   height: inherit;
   vertical-align: middle;
   align-content: right;
   display: inline;
   float: right;
-  margin-right: 5%;
+  margin-right: 10%;
 }
 .lightToggle {
   display: inline;
-  float: right;
   margin-right: 2%;
+  position: fixed;
+  right: 0;
+  top: 5;
+}
+
+.lightToggle:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
 /* .header-right a {
   padding-top: 5px;

@@ -2,7 +2,6 @@
   overflow: hidden;
   background-color: #000122;
   padding: 0;
-  padding-top: 10px;
   box-sizing: border-box;
   margin: 0;
   font-family: "arial";
@@ -14,51 +13,32 @@
   z-index: 999;
 }
 .footer {
-  padding-left: 10%;
-  /* margin-left: 25%;
-  margin-right: 25%; */
+  height: inherit;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 .footer a {
   color: white;
   text-shadow: none;
   text-align: center;
-  padding: 20px;
-  padding-right: 20%;
-  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-decoration: none;
   line-height: 25px;
-  border-radius: 4px;
   font-weight: normal;
+  vertical-align: -60%;
 }
-
-.footer a .footer-link:hover {
-  background-color: #ddd;
+.footer a:hover {
+  background-color: rgba(255, 255, 255, 0.61);
+  border-radius: 10px;
   color: black;
 }
-
-.footer a.active {
-  background-color: dodgerblue;
-  color: white;
-}
-.lightToggle {
-  position: fixed;
-  right: 0;
-  top: 5;
-}
-.lightToggle:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
-
-.CV {
-  padding-left: 10%;
-}
-
 .git::before {
   content: url(./Project_images/GitHub-Mark-Light-32px.png);
-  margin-right: 10px;
-  vertical-align: -50%;
+  padding-right: 10px;
+  vertical-align: -40%;
 }
 .email::before {
   content: url(./Project_images/email.png);
@@ -70,50 +50,17 @@
   margin-right: 10px;
   vertical-align: -40%;
 }
-@media only screen and (max-width: 1800px) {
-  .footer a {
-    padding-right: 10%;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  .git {
-    padding-right: 5% !important;
-    padding-left: 0% !important;
-  }
-  .email {
-    padding-right: 5% !important;
-  }
-  .CV {
-    padding-right: 5% !important;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .git {
-    padding-right: 5% !important;
-    padding-left: 0% !important;
-  }
-  .email {
-    padding-right: 5% !important;
-  }
-  .CV {
-    font-size: 0;
-    padding-right: 5% !important;
-  }
-}
 @media only screen and (max-width: 800px) {
   .git {
     font-size: 0;
-    padding-right: 3% !important;
-    padding-left: 0% !important;
   }
-  .email {
-    padding-right: 3% !important;
+  .git::before {
+    padding-right: 0;
   }
   .CV {
     font-size: 0;
-    padding-right: 3% !important;
   }
-  .footer {
-    padding-left: 5%;
+  .CV::before {
+    padding-right: 0;
   }
 }

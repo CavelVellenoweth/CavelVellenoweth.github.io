@@ -4,7 +4,8 @@ html {
 body {
   margin: 0;
   background-image: url(./Project_images/backgroundClear.png);
-  height: 100%;
+  height: auto;
+  min-height: 100%;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
   font-weight: bold;
@@ -15,6 +16,7 @@ p {
   white-space: pre-line;
 }
 #content-wrapper {
+  height: inherit;
   margin-left: 5%;
   margin-right: 5%;
   padding: 10px;
@@ -27,23 +29,19 @@ p {
   background-image: url(./Project_images/bodyBackgroundLight.png);
   background-size: 100%;
   background-repeat: repeat;
-  min-height: 800px;
   clear: both;
+  /* height: fit-content; */
+  width: 100%;
+  height: auto;
 }
-#content div {
-  margin-bottom: 50px;
-}
-#about {
-  margin-left: 5%;
-  margin-right: 40%;
-}
-#about ul {
-  text-align: center;
-  list-style: none;
+#projects-long {
+  margin-top: 10%;
+  padding-bottom: 5%;
 }
 .project {
   overflow: auto;
-  display: flow-root;
+  padding-left: auto;
+  padding-right: auto;
 }
 .image-div {
   margin-bottom: 0px;
@@ -51,21 +49,18 @@ p {
 }
 .image-div img {
   align-content: center;
-  width: 30%;
+  width: 40%;
   float: left;
-  min-width: 375px;
+  min-width: 500px;
   min-height: auto;
   background-color: rgb(255, 161, 0);
   padding-left: 15px;
   padding-top: 15px;
 }
-.image-div img:hover {
-  background-color: rgb(183 116 2);
-}
+
 .text-div {
   display: table;
   height: inherit;
-  margin-top: 40px;
   overflow: hidden;
 }
 
@@ -99,19 +94,7 @@ p {
   z-index: 2;
   text-shadow: none;
 }
-.text-div a {
-  text-decoration: none;
-}
-.text-div a h2 {
-  text-decoration: underline;
-}
-.text-div a h2:hover {
-  background-color: rgb(140, 74, 202);
-  text-decoration: none;
-}
-.text-div p:hover {
-  background-color: rgb(14, 122, 185);
-}
+
 ul.languages {
   display: table;
   position: relative;
@@ -142,20 +125,4 @@ ul.languages {
   text-decoration: none;
   color: #020430;
   padding: 10px;
-}
-#this-website {
-  padding-bottom: 50px;
-  margin-left: 40%;
-  margin-right: 10%;
-}
-
-@media only screen and (max-width: 1000px) {
-  #about {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #this-website {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }

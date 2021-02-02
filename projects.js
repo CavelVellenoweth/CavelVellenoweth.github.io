@@ -1,9 +1,8 @@
-
 import ProjectList from './projectlist.js';
-
+var search = window.location.href.split('?')[1]
 if(document.getElementById('projects-short') != null)
 {
-    ReactDOM.render(React.createElement(ProjectList, {length: 'short'}), document.getElementById(   'projects-short'));
+    ReactDOM.render(React.createElement(ProjectList, {length: 'short', language: search}), document.getElementById(   'projects-short'));
 }
 else if(document.getElementById('projects-medium') != null)
 {
@@ -11,7 +10,7 @@ else if(document.getElementById('projects-medium') != null)
 }
 else if(document.getElementById('projects-long') != null)
 {
-    ReactDOM.render(React.createElement(ProjectList, {length: 'long'}), document.getElementById('projects-long'));
+    ReactDOM.render(React.createElement(ProjectList, {length: 'long', name: search}), document.getElementById('projects-long'));
 }
 else
     ReactDOM.render();
