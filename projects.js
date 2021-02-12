@@ -1,8 +1,8 @@
 import ProjectList from './projectlist.js';
-var search = window.location.href.split('?')[1]
+var search = window.location.href.split('?')[1];
 if(document.getElementById('projects-short') != null)
 {
-    ReactDOM.render(React.createElement(ProjectList, {length: 'short', language: search}), document.getElementById(   'projects-short'));
+    ReactDOM.render(React.createElement(ProjectList, {length: 'short', language: search}), document.getElementById('projects-short'));
 }
 else if(document.getElementById('projects-medium') != null)
 {

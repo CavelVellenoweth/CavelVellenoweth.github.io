@@ -44,17 +44,18 @@ class light_toggle extends React.Component{
         document.cookie="light" + "=" + c_value;
     }
     toggle_Light(){
+        
         if(this.state.toggled)
         {
             this.setState({toggled: false});
             this.toggleOff();
-            this.setCookie("off",1);
+            this.setCookie("false",1);
         }
         else
         {
             this.setState({toggled: true});
             this.toggleOn();
-            this.setCookie("on",1);
+            this.setCookie("true",1);
         }
     }
     render(){

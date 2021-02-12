@@ -119,8 +119,7 @@ ul.languages {
   padding-right: 0px;
   margin-left: 50%;
   min-width: 200px;
-  width: fit-content;
-  height: 50px;
+  height: max-content;
   background-color: rgb(255, 161, 0);
   z-index: 2;
   top: -10px;
